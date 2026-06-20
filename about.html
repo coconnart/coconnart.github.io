@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Casey Hilton · CoConnArt</title>
+  <meta name="description" content="About Casey Hilton — multidisciplinary artist working in painting, drawing, sculpture, and printmaking." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">CoConn<em>Art</em></a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div style="background:var(--linen-dark); padding: clamp(3rem,6vw,5rem) var(--gap) 0;">
+      <div style="max-width:var(--max-w); margin:0 auto; display:grid; grid-template-columns:1fr 2fr; gap:clamp(3rem,6vw,6rem); align-items:start; padding-bottom: clamp(3rem,6vw,5rem);">
+
+        <!-- Portrait -->
+        <div>
+          <div style="aspect-ratio:3/4; background:var(--umber-mid); overflow:hidden; margin-bottom:1.5rem;">
+            <!--
+              Replace with actual photo:
+              <img src="images/casey-portrait.jpg" alt="Casey Hilton" style="width:100%;height:100%;object-fit:cover;" />
+            -->
+            <div style="width:100%;height:100%;min-height:300px;background:linear-gradient(160deg,var(--umber) 0%,var(--sienna) 100%);display:flex;align-items:center;justify-content:center;">
+              <p style="color:rgba(255,255,255,0.3);font-style:italic;font-family:var(--font-display);">Artist photo</p>
+            </div>
+          </div>
+          <p style="font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--sage);">Casey Hilton</p>
+          <p style="font-family:var(--font-display);font-style:italic;color:var(--umber-mid);margin-top:0.25rem;">CoConnArt</p>
+        </div>
+
+        <!-- Bio -->
+        <div class="about-page" style="padding:0;">
+          <p class="section-label">About the Artist</p>
+          <h1 class="section-title">Casey <em>Hilton</em></h1>
+          <div class="divider"></div>
+
+          <p>My work explores the spaces between memory and identity, examining how personal history shapes the way we understand ourselves and others. Through painting and mixed-media practices, I investigate themes of family, grief, mental health, relationships, and the stories we inherit — whether willingly or not.</p>
+
+          <p>I am drawn to moments of contradiction: strength and vulnerability, permanence and impermanence, connection and isolation. Using layered imagery, symbolism, and narrative elements, I create work that reflects the complexity of lived experience. Personal memories often serve as a starting point, but the goal is to create space for viewers to find echoes of their own experiences within the work.</p>
+
+          <p>My practice is rooted in observation, introspection, and experimentation. Influenced by both traditional fine art processes and contemporary visual culture, I move between painting, drawing, sculpture, printmaking, and digital media depending on what best serves the concept. Rather than offering definitive answers, I aim to ask questions about who we are, how we change, and what remains after time, loss, and growth reshape our understanding of ourselves.</p>
+
+          <p>Ultimately, my work is an invitation to reflect on the fragile, often messy nature of being human — and to find beauty within that complexity.</p>
+
+          <div style="margin-top:2.5rem; display:flex; gap:1.25rem; flex-wrap:wrap;">
+            <a href="gallery.html" class="btn btn-primary">View Gallery</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MEDIUMS -->
+    <section>
+      <div class="section-inner">
+        <p class="section-label">Practice</p>
+        <h2 class="section-title">Ways of <em>Working</em></h2>
+        <div class="divider"></div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:2rem; margin-top:1rem;">
+          <div>
+            <p style="font-family:var(--font-display);font-size:1.2rem;font-weight:400;color:var(--umber);margin-bottom:0.5rem;">Painting</p>
+            <p style="font-size:0.92rem;color:var(--umber-mid);line-height:1.7;">Oil and mixed media on canvas and board, layered over time to build depth and texture.</p>
+          </div>
+          <div>
+            <p style="font-family:var(--font-display);font-size:1.2rem;font-weight:400;color:var(--umber);margin-bottom:0.5rem;">Drawing</p>
+            <p style="font-size:0.92rem;color:var(--umber-mid);line-height:1.7;">Observational and intuitive drawing as a daily practice of seeing and thinking through form.</p>
+          </div>
+          <div>
+            <p style="font-family:var(--font-display);font-size:1.2rem;font-weight:400;color:var(--umber);margin-bottom:0.5rem;">Sculpture</p>
+            <p style="font-size:0.92rem;color:var(--umber-mid);line-height:1.7;">Wood-based sculptural work exploring organic form, material honesty, and tactile presence.</p>
+          </div>
+          <div>
+            <p style="font-family:var(--font-display);font-size:1.2rem;font-weight:400;color:var(--umber);margin-bottom:0.5rem;">Printmaking</p>
+            <p style="font-size:0.92rem;color:var(--umber-mid);line-height:1.7;">Screen printing as a way of distilling imagery into bold, repeatable gestures and layers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">CoConn<em>Art</em></div>
+      <ul class="footer-links">
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="yr"></span> Casey Hilton. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casey Hilton — CoConnArt</title>
+  <meta name="description" content="Casey Hilton is a multidisciplinary artist working in painting, drawing, sculpture, and printmaking. Portfolio at CoConnArt." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">CoConn<em>Art</em></a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero" style="padding:0;">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Painting · Sculpture · Drawing · Printmaking</p>
+        <h1 class="hero-name">Casey<br><em>Hilton</em></h1>
+        <p class="hero-tagline">Exploring the spaces between<br>memory and identity</p>
+        <div class="hero-cta">
+          <a href="gallery.html" class="btn btn-primary">View Gallery</a>
+          <a href="about.html" class="btn btn-outline">About the Artist</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Replace src with your best painting filename, e.g.: -->
+        <!-- <img src="images/paintings/your-painting.jpg" alt="Featured work by Casey Hilton" /> -->
+        <div class="hero-image-placeholder">
+          <p>Featured artwork<br><em>replace with hero image</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY PREVIEW -->
+    <section>
+      <div class="section-inner">
+        <p class="section-label">Selected Works</p>
+        <h2 class="section-title">Recent <em>Work</em></h2>
+        <div class="divider"></div>
+
+        <div class="preview-grid">
+          <!-- Each card links to gallery with the right tab open -->
+          <a href="gallery.html?tab=paintings" class="preview-card">
+            <!-- <img src="images/paintings/YOURFILE.jpg" alt="Painting by Casey Hilton" /> -->
+            <div class="preview-placeholder p1"><span>Paintings</span></div>
+            <span class="preview-card-label">Paintings →</span>
+          </a>
+          <a href="gallery.html?tab=sculptures" class="preview-card">
+            <!-- <img src="images/sculptures/YOURFILE.jpg" alt="Sculpture by Casey Hilton" /> -->
+            <div class="preview-placeholder p2"><span>Sculptures</span></div>
+            <span class="preview-card-label">Sculptures →</span>
+          </a>
+          <a href="gallery.html?tab=drawings" class="preview-card">
+            <!-- <img src="images/drawings/YOURFILE.jpg" alt="Drawing by Casey Hilton" /> -->
+            <div class="preview-placeholder p3"><span>Drawings</span></div>
+            <span class="preview-card-label">Drawings →</span>
+          </a>
+        </div>
+
+        <div style="text-align:center; margin-top:3rem;">
+          <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SNIPPET -->
+    <section class="about-snippet">
+      <div class="about-snippet-inner">
+        <div class="about-snippet-image">
+          <!-- <img src="images/casey-portrait.jpg" alt="Casey Hilton" /> -->
+          <div class="about-snippet-image-placeholder"><p>Artist photo</p></div>
+        </div>
+        <div>
+          <p class="section-label">About the Artist</p>
+          <h2 class="section-title">Casey <em>Hilton</em></h2>
+          <div class="divider"></div>
+          <p>My work explores the spaces between memory and identity, examining how personal history shapes the way we understand ourselves and others. Through painting and mixed-media practices, I investigate themes of family, grief, mental health, relationships, and the stories we inherit — whether willingly or not.</p>
+          <p>I am drawn to moments of contradiction: strength and vulnerability, permanence and impermanence, connection and isolation.</p>
+          <a href="about.html" class="btn btn-outline" style="margin-top:1rem;">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS VIDEOS TEASER -->
+    <section style="background: var(--linen);">
+      <div class="section-inner" style="text-align:center;">
+        <p class="section-label">Process</p>
+        <h2 class="section-title">Watch the <em>Work Unfold</em></h2>
+        <div class="divider" style="margin: 1.5rem auto 2rem;"></div>
+        <p style="max-width:560px; margin:0 auto 2.5rem; color:var(--umber-mid);">Time-lapse recordings offer a rare window into the layered, intuitive process behind each painting — from blank canvas to finished work.</p>
+        <a href="gallery.html?tab=timelapses" class="btn btn-primary">View Time Lapses</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">CoConn<em>Art</em></div>
+      <ul class="footer-links">
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="yr"></span> Casey Hilton. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

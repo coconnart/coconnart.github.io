@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Casey Hilton · CoConnArt</title>
+  <meta name="description" content="Gallery of paintings, drawings, sculptures, screen prints, and time-lapse videos by Casey Hilton." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">CoConn<em>Art</em></a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <div class="gallery-header section-inner">
+      <p class="section-label">Works by Casey Hilton</p>
+      <h1 class="section-title">Gallery</h1>
+      <div class="divider"></div>
+
+      <!-- TABS -->
+      <div class="gallery-tabs" role="tablist">
+        <button class="gallery-tab active" role="tab" onclick="switchTab('paintings', this)">Paintings</button>
+        <button class="gallery-tab" role="tab" onclick="switchTab('drawings', this)">Drawings</button>
+        <button class="gallery-tab" role="tab" onclick="switchTab('sculptures', this)">Sculptures</button>
+        <button class="gallery-tab" role="tab" onclick="switchTab('screenprints', this)">Screen Prints</button>
+        <button class="gallery-tab" role="tab" onclick="switchTab('timelapses', this)">Time Lapses</button>
+      </div>
+    </div>
+
+    <!-- ── PAINTINGS ── -->
+    <div class="gallery-section active" id="tab-paintings">
+      <div class="gallery-grid">
+        <!--
+          HOW TO ADD PAINTINGS:
+          Copy and paste the block below for each painting.
+          Replace YOURFILE.jpg with the actual filename.
+          Replace "Painting Title" with the artwork title (or leave blank with title="").
+          Files should be in the images/paintings/ folder.
+
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/paintings/YOURFILE.jpg" alt="Painting by Casey Hilton" data-title="Painting Title" />
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-title">Painting Title</span>
+            </div>
+          </div>
+        -->
+
+        <!-- PLACEHOLDERS — delete these once real images are added -->
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:4/5; background:linear-gradient(135deg,#5C3D2E,#8B4A2F);"><span>painting 01</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/4; background:linear-gradient(160deg,#6B4226,#A06030);"><span>painting 02</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:1/1; background:linear-gradient(120deg,#4A2E1C,#7A5030);"><span>painting 03</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:5/4; background:linear-gradient(145deg,#5C3D2E,#9A5535);"><span>painting 04</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/5; background:linear-gradient(135deg,#3D2E1C,#6B4030);"><span>painting 05</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:4/3; background:linear-gradient(155deg,#6B3D26,#8B5030);"><span>painting 06</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DRAWINGS ── -->
+    <div class="gallery-section" id="tab-drawings">
+      <div class="gallery-grid">
+        <!--
+          HOW TO ADD DRAWINGS:
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/drawings/YOURFILE.jpg" alt="Drawing by Casey Hilton" data-title="Drawing Title" />
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-title">Drawing Title</span>
+            </div>
+          </div>
+        -->
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/4; background:linear-gradient(135deg,#3D3D30,#6B6B50);"><span>drawing 01</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:4/5; background:linear-gradient(145deg,#302E28,#585040);"><span>drawing 02</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:1/1; background:linear-gradient(160deg,#3A3830,#626050);"><span>drawing 03</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:5/4; background:linear-gradient(130deg,#353325,#5A5845);"><span>drawing 04</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SCULPTURES ── -->
+    <div class="gallery-section" id="tab-sculptures">
+
+      <!-- Featured sculpture video -->
+      <div style="max-width:var(--max-w); margin:0 auto; padding:0 var(--gap) 2.5rem;">
+        <p class="section-label" style="margin-bottom:1rem;">Featured Work</p>
+        <div class="video-embed" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; background:var(--umber);">
+          <!--
+            HOW TO EMBED SCULPTURE VIDEO:
+            1. Upload the video to YouTube (can be unlisted)
+            2. Get the video ID from the URL (the part after ?v=)
+            3. Replace YOUR_VIDEO_ID below with that ID
+
+            <iframe
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Sculpture by Casey Hilton"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          -->
+          <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <p style="color:rgba(242,237,228,0.4);font-family:var(--font-display);font-style:italic;">Sculpture video — add YouTube embed here</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <!--
+          HOW TO ADD SCULPTURE PHOTOS:
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/sculptures/YOURFILE.jpg" alt="Sculpture by Casey Hilton" data-title="Sculpture Title" />
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-title">Sculpture Title</span>
+            </div>
+          </div>
+        -->
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/4; background:linear-gradient(135deg,#4A5C3D,#7A8C6E);"><span>sculpture 01</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:4/3; background:linear-gradient(145deg,#3D5040,#6E8C70);"><span>sculpture 02</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:1/1; background:linear-gradient(160deg,#405040,#708070);"><span>sculpture 03</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:4/5; background:linear-gradient(130deg,#3D5C45,#6A8C70);"><span>sculpture 04</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SCREEN PRINTS ── -->
+    <div class="gallery-section" id="tab-screenprints">
+      <div class="gallery-grid">
+        <!--
+          HOW TO ADD SCREEN PRINTS:
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/screenprints/YOURFILE.jpg" alt="Screen print by Casey Hilton" data-title="Print Title" />
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-title">Print Title</span>
+            </div>
+          </div>
+        -->
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/4; background:linear-gradient(135deg,#3D4A5C,#6E7A8C);"><span>screen print 01</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/4; background:linear-gradient(145deg,#2E3D50,#5A6A80);"><span>screen print 02</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/4; background:linear-gradient(155deg,#354560,#607090);"><span>screen print 03</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="aspect-ratio:3/4; background:linear-gradient(140deg,#2A3850,#506080);"><span>screen print 04</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TIME LAPSES ── -->
+    <div class="gallery-section" id="tab-timelapses">
+      <div style="max-width:var(--max-w); margin:0 auto; padding:0 var(--gap) clamp(4rem,8vw,7rem);">
+        <p style="color:var(--umber-mid); margin-bottom:3rem; max-width:600px;">
+          Each time-lapse captures the full arc of a painting from blank canvas to completion — hours of work compressed into minutes.
+        </p>
+
+        <!--
+          HOW TO ADD TIME-LAPSE VIDEOS:
+          1. Upload each video to YouTube (can be unlisted)
+          2. Copy the video ID from each URL
+          3. Copy and paste the block below for each video, replacing YOUR_VIDEO_ID and the title
+
+          <div class="timelapse-entry" style="margin-bottom:3rem;">
+            <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; background:var(--umber); margin-bottom:1rem;">
+              <iframe
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Time-lapse — Painting Title"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p style="font-family:var(--font-display);font-style:italic;font-size:1.05rem;color:var(--umber);">Painting Title</p>
+          </div>
+        -->
+
+        <!-- PLACEHOLDERS -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr)); gap:2.5rem;">
+          <div>
+            <div style="aspect-ratio:16/9; background:var(--umber); display:flex;align-items:center;justify-content:center; margin-bottom:1rem;">
+              <p style="color:rgba(242,237,228,0.35);font-family:var(--font-display);font-style:italic;">Time-lapse 01 — add YouTube embed</p>
+            </div>
+            <p style="font-family:var(--font-display);font-style:italic;color:var(--umber);">Time-lapse 01</p>
+          </div>
+          <div>
+            <div style="aspect-ratio:16/9; background:var(--umber); display:flex;align-items:center;justify-content:center; margin-bottom:1rem;">
+              <p style="color:rgba(242,237,228,0.35);font-family:var(--font-display);font-style:italic;">Time-lapse 02 — add YouTube embed</p>
+            </div>
+            <p style="font-family:var(--font-display);font-style:italic;color:var(--umber);">Time-lapse 02</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end .page -->
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">CoConn<em>Art</em></div>
+      <ul class="footer-links">
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="yr"></span> Casey Hilton. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

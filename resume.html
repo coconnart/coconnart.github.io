@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Casey Hilton · CoConnArt</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .resume-two-col {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: start;
+    }
+    .resume-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--umber-mid);
+      background: var(--linen-dark);
+      padding: 0.25rem 0.65rem;
+      margin: 0.2rem 0.2rem 0.2rem 0;
+      letter-spacing: 0.03em;
+    }
+    .resume-entry-bullets {
+      margin: 0.5rem 0 0 1rem;
+      padding: 0;
+    }
+    .resume-entry-bullets li {
+      font-size: 0.92rem;
+      color: var(--umber-mid);
+      line-height: 1.7;
+      margin-bottom: 0.35rem;
+      list-style: none;
+      position: relative;
+      padding-left: 1rem;
+    }
+    .resume-entry-bullets li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--sienna);
+    }
+    @media (max-width: 700px) {
+      .resume-two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">CoConn<em>Art</em></a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div class="resume-page">
+
+      <p class="section-label">Curriculum Vitae</p>
+      <h1 class="section-title">Casey <em>Hilton</em></h1>
+      <p style="color:var(--umber-mid);font-size:0.9rem;margin-top:0.25rem;">Artist · Educator · Illustrator · Youth Development</p>
+      <div class="divider"></div>
+
+      <!-- Download button — rename your PDF to casey-resume.pdf and place it in the root folder -->
+      <a href="casey-resume.pdf" download class="btn btn-primary resume-download" style="margin-bottom:3rem;display:inline-flex;align-items:center;gap:0.5rem;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download PDF
+      </a>
+
+      <div class="resume-two-col">
+
+        <!-- LEFT COLUMN: main content -->
+        <div>
+
+          <!-- PROFILE -->
+          <div class="resume-section">
+            <p class="resume-section-title">Profile</p>
+            <p style="font-size:0.97rem;color:var(--umber-mid);line-height:1.8;">
+              Creative educator and youth development professional with a BFA in Illustration from Pratt Institute and 10+ years of experience spanning visual arts education, residential behavioral health, disability support, and professional studio practice. Equally at home running a middle school art room and supporting a young adult in a residential treatment program. Brings the precision of a trained illustrator and the warmth of a seasoned caregiver to every environment she works in.
+            </p>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="resume-section">
+            <p class="resume-section-title">Experience</p>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Educational Coordinator &amp; Clinical Assistant</p>
+              <p class="resume-entry-meta">The Ridge RTC · Milton, NH · Oct 2025 – Present</p>
+              <ul class="resume-entry-bullets">
+                <li>Facilitate daily educational, recreational, and psychoeducational programming for adolescent and young adult clients in a residential treatment setting.</li>
+                <li>Lead creative arts, life-skills, and social-emotional learning activities using trauma-informed and strengths-based approaches.</li>
+                <li>Collaborate with clinicians, educators, nurses, and residential staff to ensure individualized continuity of care across disciplines.</li>
+                <li>Complete daily behavioral observations, incident documentation, and clinical progress notes per program standards.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Visual Arts Teacher, Grades 5–8</p>
+              <p class="resume-entry-meta">Williamsburg Uncommon Middle School · Brooklyn, NY · Sep 2023 – Jun 2024</p>
+              <ul class="resume-entry-bullets">
+                <li>Developed and implemented a full visual arts curriculum for 200+ students covering drawing, painting, design, art history, and digital media.</li>
+                <li>Designed formative and summative assessments; introduced scaffolded project rubrics to support student-led learning and differentiation.</li>
+                <li>Maintained a positive, structured classroom culture through consistent behavior management systems including Kickboard.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Teaching Artist's Assistant</p>
+              <p class="resume-entry-meta">Private Client, Professional Artist with Cerebral Palsy · New York, NY · Oct 2022 – Sep 2024</p>
+              <ul class="resume-entry-bullets">
+                <li>Provided full-spectrum support to a professional working artist: mobility assistance, personal care, creative facilitation, and event accompaniment.</li>
+                <li>Wrote, programmed, and operated a speech-generating device (AAC technology) for daily communication and art lesson delivery.</li>
+                <li>Co-facilitated adaptive painting, sculpture, and mixed-media projects tailored to the client's abilities and artistic vision.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Studio Assistant</p>
+              <p class="resume-entry-meta">Mickalene Thomas Studio · Brooklyn, NY · Sep – Oct 2022</p>
+              <ul class="resume-entry-bullets">
+                <li>Worked in a fast-paced professional studio alongside internationally recognized contemporary artist Mickalene Thomas.</li>
+                <li>Assisted with large-scale installations, collaging, painting preparation, and studio operations under tight deadlines.</li>
+                <li>Maintained inventory, organized materials, coordinated scheduling, and enforced NDA and safety protocols.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Long-Term Childcare Provider</p>
+              <p class="resume-entry-meta">Private Family · Brooklyn, NY · Jan 2021 – Jul 2024</p>
+              <ul class="resume-entry-bullets">
+                <li>Provided three years of consistent full-care support from infant through toddler stage, focusing on emotional, physical, and cognitive development.</li>
+                <li>Designed and led creative art projects to build fine motor skills, imagination, and self-expression.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Independent Childcare Professional</p>
+              <p class="resume-entry-meta">New York &amp; New Hampshire · 2014 – Present</p>
+              <ul class="resume-entry-bullets">
+                <li>Trusted by dozens of Northeast families for long-term childcare from infancy through adolescence; facilitated educational games, art activities, and homework support.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Service &amp; Membership Sales Representative</p>
+              <p class="resume-entry-meta">Wild Center Natural History Museum · Tupper Lake, NY · Jun 2016 – Jul 2018</p>
+              <ul class="resume-entry-bullets">
+                <li>Sold museum memberships and admission tickets, restocked merchandise, and provided customer service across multiple departments.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Theater Attendant</p>
+              <p class="resume-entry-meta">Adirondack State Theater · Tupper Lake, NY · 2017 – 2023</p>
+              <ul class="resume-entry-bullets">
+                <li>Managed ticket sales, concessions, and crowd supervision; handled cleaning and general theater operations.</li>
+              </ul>
+            </div>
+
+          </div><!-- /experience -->
+
+          <!-- EXHIBITIONS & AWARDS -->
+          <div class="resume-section">
+            <p class="resume-section-title">Exhibitions &amp; Awards</p>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Senior Thesis Exhibition: "Happy Meadows"</p>
+              <p class="resume-entry-meta">Pratt Institute · Brooklyn, NY · 2022</p>
+              <p style="font-size:0.92rem;color:var(--umber-mid);">Curated and installed solo thesis exhibition.</p>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Selected Works — Munson-Williams-Proctor Arts Institute</p>
+              <p class="resume-entry-meta">Utica, NY · 2019</p>
+              <p style="font-size:0.92rem;color:var(--umber-mid);">Sculptures selected for juried museum exhibition from Pratt MWP Sophomore Show.</p>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Curtis S. Read Art Award</p>
+              <p class="resume-entry-meta">Tupper Lake, NY · 2015 &amp; 2016</p>
+              <p style="font-size:0.92rem;color:var(--umber-mid);">Regional juried award recognizing outstanding student artists. Two-time recipient.</p>
+            </div>
+
+          </div>
+
+        </div><!-- /left col -->
+
+        <!-- RIGHT COLUMN: sidebar -->
+        <div>
+
+          <!-- EDUCATION -->
+          <div class="resume-section">
+            <p class="resume-section-title">Education</p>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">BFA, Illustration</p>
+              <p class="resume-entry-meta">Pratt Institute · Brooklyn, NY · 2022</p>
+              <p style="font-size:0.85rem;color:var(--umber-mid);line-height:1.6;">GPA 3.7 · 8× Dean's List<br>Presidential &amp; Merit Scholarship<br>NCAA Athlete: Soccer &amp; Basketball</p>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Foundation Studies</p>
+              <p class="resume-entry-meta">Pratt MWP · Utica, NY · 2019</p>
+              <p style="font-size:0.85rem;color:var(--umber-mid);">GPA 3.73</p>
+            </div>
+
+            <div class="resume-entry">
+              <p class="resume-entry-title">Advanced Regents Diploma</p>
+              <p class="resume-entry-meta">Tupper Lake Middle High School · 2017</p>
+              <p style="font-size:0.85rem;color:var(--umber-mid);">High Honor Roll · Honor Society</p>
+            </div>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="resume-section">
+            <p class="resume-section-title">Teaching &amp; Curriculum</p>
+            <span class="resume-tag">Visual Arts Instruction</span>
+            <span class="resume-tag">Curriculum Development</span>
+            <span class="resume-tag">Differentiated Learning</span>
+            <span class="resume-tag">Classroom Management</span>
+            <span class="resume-tag">Social-Emotional Learning</span>
+            <span class="resume-tag">Group Facilitation</span>
+          </div>
+
+          <div class="resume-section">
+            <p class="resume-section-title">Clinical &amp; Behavioral</p>
+            <span class="resume-tag">Trauma-Informed Care</span>
+            <span class="resume-tag">Positive Behavior Support</span>
+            <span class="resume-tag">Crisis De-escalation</span>
+            <span class="resume-tag">ABA Foundations</span>
+            <span class="resume-tag">Progress Documentation</span>
+            <span class="resume-tag">Medication Administration</span>
+          </div>
+
+          <div class="resume-section">
+            <p class="resume-section-title">Studio Arts</p>
+            <span class="resume-tag">Painting</span>
+            <span class="resume-tag">Drawing</span>
+            <span class="resume-tag">Sculpture</span>
+            <span class="resume-tag">Ceramics</span>
+            <span class="resume-tag">Mixed Media</span>
+            <span class="resume-tag">Digital</span>
+            <span class="resume-tag">Screen Printing</span>
+          </div>
+
+          <div class="resume-section">
+            <p class="resume-section-title">Technology</p>
+            <span class="resume-tag">Adobe Creative Suite</span>
+            <span class="resume-tag">Canva</span>
+            <span class="resume-tag">Google Classroom</span>
+            <span class="resume-tag">Kickboard</span>
+            <span class="resume-tag">SmartBoard</span>
+            <span class="resume-tag">Google Workspace</span>
+            <span class="resume-tag">MS Office</span>
+          </div>
+
+          <div class="resume-section">
+            <p class="resume-section-title">Languages</p>
+            <span class="resume-tag">French (Proficient)</span>
+            <span class="resume-tag">Danish (Basic)</span>
+          </div>
+
+          <!-- CERTIFICATIONS -->
+          <div class="resume-section">
+            <p class="resume-section-title">Certifications</p>
+            <ul style="list-style:none;padding:0;">
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;border-bottom:1px solid var(--linen-dark);">CPR &amp; First Aid (Current)</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;border-bottom:1px solid var(--linen-dark);">HIPAA &amp; Confidentiality</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;border-bottom:1px solid var(--linen-dark);">Trauma-Informed Care</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;border-bottom:1px solid var(--linen-dark);">Positive Behavior Support</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;border-bottom:1px solid var(--linen-dark);">ABA Foundations</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;border-bottom:1px solid var(--linen-dark);">Medication Administration</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;border-bottom:1px solid var(--linen-dark);">Crisis Prevention &amp; De-escalation</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.3rem 0;">Cultural Competency</li>
+            </ul>
+          </div>
+
+          <!-- COMMUNITY -->
+          <div class="resume-section">
+            <p class="resume-section-title">Community</p>
+            <ul style="list-style:none;padding:0;">
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.25rem 0;">Community Mural Facilitator, 2025</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.25rem 0;">Paint &amp; Sip Instructor</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.25rem 0;">Face Painting Volunteer</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.25rem 0;">Veterans &amp; Memorial Day Performer</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.25rem 0;">Tinman Triathlon Volunteer</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.25rem 0;">Writing Center Peer Tutor</li>
+              <li style="font-size:0.85rem;color:var(--umber-mid);padding:0.25rem 0;">Class Treasurer, 2015–2017</li>
+            </ul>
+          </div>
+
+        </div><!-- /right col -->
+      </div><!-- /two-col -->
+    </div><!-- /resume-page -->
+  </div><!-- /page -->
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">CoConn<em>Art</em></div>
+      <ul class="footer-links">
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="yr"></span> Casey Hilton. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
